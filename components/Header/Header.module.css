@@ -1,0 +1,22 @@
+.wrapper{
+    background-color: blueviolet;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: var(--primary-text-color);
+  }
+  
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .links a {
+    color: var(--primary-text-color);
+  }
