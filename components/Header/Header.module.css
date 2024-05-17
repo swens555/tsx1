@@ -20,3 +20,55 @@
   .links a {
     color: var(--primary-text-color);
   }
+  .burgerBtn {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .burgerBtn img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mobileMenu {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .wrapper nav {
+      display: none;
+    }
+  
+    .burgerBtn {
+      display: block;
+    }
+  
+    .mobileMenu {
+      display: flex;
+      justify-content: center;
+      background-color: #948979;
+      position: fixed;
+      width: 100%;
+      height: calc(100vh - 80px);
+      left: -1000px;
+      top: 80px;
+      transition: 0.3s;
+    }
+  
+    .mobileMenuOpen {
+      left: 0px;
+    }
+  
+    .mobileLinks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 7rem;
+    }
+  }
